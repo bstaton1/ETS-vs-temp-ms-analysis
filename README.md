@@ -3,19 +3,14 @@
 
 ## Repository Structure
 
-* `analysis.R` contains the R code to fit all GAMs, bootstrap them, obtain critical temperature values from the bootstrapped curves, and perform the ANOVAs comparing temperature values across species, all as described in the article. This file also contains code to reproduce all plots found in the manuscript and prints or exports files containing the numerical values contained in the results text.
-
-* `functions.R` contains several custom R functions that perform the GAM fitting, bootstrapping, and critical temperature value derivation. Is `source()`-ed by `analysis.R` prior to performing these tasks.
-
-*  `ETS-vs-temp-data.csv` contains the raw data for the analysis. Each row is one individual of one species observed at one temperature and contains four variables:
-
-  * **Fish**: an identifier for individual nested within species
-
-  * **Temp**: the temperature ($^\circ$C) of the observation
-
-  * **ETS**: the activity measurement of the observation (mL O<sub>2</sub> $\cdot$ gWW<sup>-1</sup> $\cdot$ hr<sup>-1</sup>)
-
-  * **Species**: an identifier for unique species; the species codes are as follows:
+*  `analysis.R` contains the R code to fit all GAMs, bootstrap them, obtain critical temperature values from the bootstrapped curves, and perform the ANOVAs comparing temperature values across species, all as described in the article. This file also contains code to reproduce all plots found in the manuscript and prints or exports files containing the numerical values contained in the results text.
+*  `functions.R` contains several custom R functions that perform the GAM fitting, bootstrapping, and critical temperature value derivation. Is `source()`-ed by `analysis.R` prior to performing these tasks.
+*  `ETS-vs-temp-data.csv` contains the raw data for the analysis. Each row is one individual of one species observed at one temperature and contains four variables:  
+    -  **Fish**: an identifier for individual nested within species
+    -  **Temp**: the temperature (&#176;C) of the observation
+    -  **ETS**: the activity measurement of the observation (mL O<sub>2</sub> $\cdot$ gWW<sup>-1</sup> $\cdot$ hr<sup>-1</sup>)
+    -  **Species**: an identifier for unique species; the species codes are as follows:
+    <br>
     
     | Scientific Name           | Common Name            | Code in Data |
     | ------------------------- | ---------------------- | ------------ |
@@ -33,6 +28,8 @@
 This repository does not track the output files, since they can be reproduced from source at any time with the above files.
 
 To replicate the analysis, open the file `ETS-vs-temp-ms-analysis.Rproj` file in RStudio and then execute the entire `analysis.R` script. You will have a new `output` subdirectory created that will contain all output generated for the article. An addition PDF file will be created (`output/boot-gams.pdf`) that displays the fitted and bootstrap GAMs for each individual, as well as the derived critical temperature values. 
+
+
 
 ## Session Info
 
