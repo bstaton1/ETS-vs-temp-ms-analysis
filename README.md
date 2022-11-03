@@ -1,6 +1,10 @@
 > This repository houses the code and data for the article: _Thermal performance
 > of the electron transport system Complex III in seven Alabama fishes_ by L. Horne, D. DeVries, R. Wright, E. Irwin, B. Staton, H. Abdelrahman, and J. Stoeckel accepted for publication in the _Journal of Experimental Zoology: Series A_
 
+[![ArticleDOI](https://img.shields.io/badge/Article%20DOI-10.1002%2Fjez.2267-blue)](https://doi.org/10.1002/jez.2667)
+
+[![GitHub Repo Archive DOI](https://img.shields.io/badge/GitHub%20Repo%20Archive%20DOI-10.5281%2Fzenodo.7187078-blue)](https://doi.org/10.5281/zenodo.7187078)
+
 ## Repository Structure
 
 *  `analysis.R` contains the R code to fit all GAMs, bootstrap them, obtain critical temperature values from the bootstrapped curves, and perform the ANOVAs comparing temperature values across species, all as described in the article. This file also contains code to reproduce all plots found in the manuscript and prints or exports files containing the numerical values contained in the results text.
